@@ -22,6 +22,9 @@ $(document).ready(function () {
     setTimeout(function () {
         $("#motionE1").show();
         $("#circleE1").show();
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'http://www.soundjay.com/misc/sounds/bell-ringing-01.mp3');
+        audioElement.play();
     }, 3000);
     setTimeout(function () {
         $("#motionN1").show();

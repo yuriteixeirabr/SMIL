@@ -137,19 +137,53 @@
         </animateMotion>
 
         <!--Seção das Imagens-->
-        <image href="utils/imagens/1.jpg" style="width: 350px; height: 350px">
-            <animateMotion begin="29000ms" path="M-50,150 H 750 Z" dur="10s" repeatCount="indefinite"/>
+        <image href="utils/imagens/1.jpg" style="width: 350px; height: 350px" id="r1">
+            <animateMotion path="M-50,0 H 750 Z" dur="10s" begin="30000ms" visible="0" repeatCount="indefinite"/>
         </image>
-        <!--<image href="utils/imagens/2.jpg" style="width: 100px; height: 50px">
-            <animateMotion path="M-50,150 H 750 Z" dur="10s" repeatCount="indefinite"/>
+        <image href="utils/imagens/2.jpg" style="width: 350px; height: 350px" x="0">
+            <animate
+                    attributeName="y"
+                    from="-350"
+                    to="250"
+                    dur="10s"
+                    begin="30000ms"
+                    calcMode="spline"
+                    values="50; 250; 120; 250; 170; 250; 210; 250"
+                    keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"
+                    keySplines="0.42 0 1 1;
+                       0 0 0.59 1;
+                       0.42 0 1 1;
+                       0 0 0.59 1;
+                       0.42 0 1 1;
+                       0 0 0.59 1;
+                       0.42 0 1 1"
+                    fill="freeze"
+                    id="circ-anim"/>
         </image>
-        <image href="utils/imagens/3.jpg" style="width: 100px; height: 50px">
-            <animateMotion path="M-50,250 H 750 Z" dur="15s" repeatCount="indefinite"/>
+        <image href="utils/imagens/3.jpg" style="width: 350px; height: 350px" x="360">
+            <animate
+                    attributeName="y"
+                    from="-350"
+                    to="250"
+                    dur="10s"
+                    begin="30000ms"
+                    calcMode="spline"
+                    values="50; 250; 120; 250; 170; 250; 210; 250"
+                    keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"
+                    keySplines="0.42 0 1 1;
+                       0 0 0.59 1;
+                       0.42 0 1 1;
+                       0 0 0.59 1;
+                       0.42 0 1 1;
+                       0 0 0.59 1;
+                       0.42 0 1 1"
+                    fill="freeze"
+                    id="circ-anim"/>
         </image>
-        <image href="utils/imagens/4.jpg" style="width: 100px; height: 50px">
-            <animateMotion path="M250,80 H 50 Q 30,80 30,50 Q 30,20 50,20 H 250 Q 280,20,280,50 Q 280,80,250,80Z"
-                           dur="6000ms" rotate="auto"/>
-        </image>-->
+        <use xlink:href="#r1"/>
+        <use xlink:href="#r1" transform="rotate(60 160 160)"/>
+        <use xlink:href="#r1" transform="rotate(120 160 160)"/>
+        <use xlink:href="#r1" transform="rotate(180 160 160)"/>
     </svg>
 </div>
 </body>
